@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: formula1
+    description: a clone of a snowflake database
+    database: formula1
+    schema: raw
+
+
+    tables:
+      - name: circuits
+        description: raw circuit data
+        columns:
+        - name: circuitid
+          description: primary key for raw circuit data
+          tests: 
+          - unique
+          - not_null
+
+
